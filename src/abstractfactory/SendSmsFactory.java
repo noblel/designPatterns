@@ -1,0 +1,12 @@
+package abstractfactory;
+
+/**
+ * @author Noblel
+ * 发送Sms工厂
+ */
+public class SendSmsFactory implements Provider {
+    @Override
+    public Sender produce() {
+        return new SmsSender();
+    }
+}
